@@ -1,0 +1,38 @@
+### Create a new Contact
+POST http://localhost:8080/api/contacts
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Ilija",
+  "address": "Despota Olivera 6"
+}
+
+### Add second Contact
+POST http://localhost:8080/api/contacts
+Content-Type: application/json
+
+{
+"id": 2,
+"name": "Stefan",
+"address": "Bulevar Revolucije 244"
+}
+
+### Get all Contacts
+GET http://localhost:8080/api/contacts
+
+### Update a Contact
+PUT http://localhost:8080/api/contacts/2
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "Marko",
+  "address": "Novi Beograd Blok 83"
+}
+
+### Delete a Contact
+DELETE http://localhost:8080/api/contacts/2
+Content-Type: application/json
+
+
